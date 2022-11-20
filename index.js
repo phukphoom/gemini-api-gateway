@@ -31,7 +31,7 @@ app.post("/event", async (req, res) => {
     });
 
     res.send(response.data).status(response.status);
-  } catch (e) {
+  } catch (err) {
     res.status(500);
   }
 });
